@@ -1,0 +1,280 @@
+
+.logo_img{
+    height: 50px;
+    width: 200px;
+    margin: -5px 0px 0px -30px;
+}
+
+.dropdown-menu{
+    // position: relative !important;
+    // top: 5px;
+    // left: 0px !important; 
+    will-change: top, left;
+    margin-top: 13px;
+    background:linear-gradient(to bottom, #9a0015 40%,#511821 100%);;
+}
+
+/* resets */
+.stickyHeader{
+    margin:0px; padding:0px;
+}
+body { margin:50px; padding:0px; }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    background-image: url('src/assets/img/truck.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+    width: 100%;
+    height: 350px;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background:linear-gradient(to bottom, #9a0015 40%,#511821 100%);
+    //position: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    //left: 2%;
+   // visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    //margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 50px;
+   // margin-left: 10px;
+}
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    /* opacity: 3; */
+    font-weight: bold;
+}
+//     text-decoration: none; 
+//     color: #a9abae;
+// }
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    //padding: 4rem 0;
+   // width: 960px;
+    max-width: 80%;
+    margin-top: 40px;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+.secondHaeder{
+margin-top: 10px;
+}
+.navOpertions{
+    margin: 0 18% 0 18%;
+}
+a{
+    cursor:pointer!important;
+  }
+  #profileDropdown span {
+    padding: 5px;
+  }
+  .navbar .collapse .navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding: 11px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 20px;
+    margin-left: 5px;
+    color: inherit;
+}
+
+.container-fluid {
+    width: 80%;
+    padding-right: 0px; 
+    padding-left: 0px; 
+    margin-right: auto; 
+    margin-left: auto;
+    background-color: white;
+}
+
+// p {
+//         padding-left: 18px;
+//         float: left;
+//         font-size: 16px;
+//         font-weight: 400;
+//     }
+.input-group {
+    //background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    border-width: thin;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: white;
+    margin-top: 180px;
+    font-size: 18px;
+}
+a .material-icons {
+    vertical-align: middle;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+
+h3{
+    font-weight: 600;
+}
+
+.main-truck{
+    margin-left: 130px;
+}
+
+
+.more{
+    background-color: #e8e3e3;
+    margin: auto;
+}
+#pro{
+    min-height: 230px;
+}
+// .btn-close{
+//     margin-left: 128px;
+// }
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-textfield {
+  position: relative;  
+}
+
+label {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: .1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .6rem 1.7rem;
+    //margin-top: 13px;
+    color: gray;
+   // width: 186px;
+    transition: 0.1s ease-out;
+}
+input:focus {
+  border-color: #6200EE;  
+}
+input:focus + label {
+  color: #6200EE;
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
+input:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(.9);
+}
